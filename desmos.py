@@ -124,7 +124,7 @@ def run_bot(data_account, recover=1):
         driver.find_element(By.CSS_SELECTOR,'[contenteditable="true"]').send_keys(konten)
         time.sleep(3)
 
-        driver.find_element(By.XPATH,"/html/body/div[6]/div/div[2]/div/div[3]/div/div/span/span").click()
+        driver.find_element(By.CSS_SELECTOR,"body > div.dcg-portal-container.dcg-activity-player-api-container.dcg-activity-editor-api-container > div > div.modal-transition-container.layout-context-medium > div > div.footer-content-wrapper > div > div > span").click()
         time.sleep(5)
 
         
